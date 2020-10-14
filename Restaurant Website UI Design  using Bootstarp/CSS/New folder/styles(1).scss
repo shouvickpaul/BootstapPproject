@@ -1,0 +1,72 @@
+$lt-gray:#ddd;
+$b-dark:#512da8;
+$b-light:#9575cd;
+$b-pale:#d1c4e9;
+
+//height var
+$carousel-item-height:300px;
+//mixin
+@mixin zero-margin($pad-up-dn:0px,$pad-left-right:0px){
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+.modal-header{
+    background: $b-dark;
+    color: floralwhite;
+}
+.modal-body{
+    background: $b-light;
+}
+.row-header{
+    @include zero-margin()
+}
+.row-content{
+    @include zero-margin(50px,0px);
+    border-bottom:1px ridge;
+    min-height: 400px;
+}
+.foot{
+    background-color: $b-pale;
+    @include zero-margin(20px,0px)
+}
+.jumbotron{
+    @include zero-margin(70px, 30px);
+    background: $b-light !important;
+    color: floralwhite;
+}
+address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+.navbar-dark{
+    background-color: $b-dark;
+}
+.tab-content{
+    border-left:1px solid $lt-gray;
+    border-right:1px solid $lt-gray;
+    border-bottom:1px solid $lt-gray;
+    padding: 10px;
+}
+.carousel{
+    background: $b-dark;
+    .carousel-item{
+        height: $carousel-item-height;
+        img{
+            position: absolute;
+            top:0;
+            left:0;
+            min-height:300px;
+        }
+    }
+}
+#carouselButton{
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}

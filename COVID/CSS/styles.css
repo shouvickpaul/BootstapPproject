@@ -1,0 +1,47 @@
+.navbar-dark {
+     background-color: #0670be;
+}
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+    background: #0670be;
+}
+.bg{
+  text-align: center;
+}
+
+.jumbotron{
+	padding: 80px 20px 25px 20px;
+	margin: 0px auto;
+	background: floralwhite;
+  background-image: url('./Images/1.jpg');
+  color: #0670be;
+}
+.footer{
+    padding-top: 5px;
+	  color: white;
+    border-color: white;
+    background: #0670be;
+    font-weight: bold;
+}
+.card .card-header{
+  background-color: #d42860;
+}
+.card .card-body{
+  color: #0b6db8;
+}
+dd{
+  font-weight: bold;
+}
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+.card{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.row-header{
+  text-align: center;
+  color: #d42860;
+}
